@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Montserrat&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,300;1,400&family=Quicksand:wght@300&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+.container{
+    width: 100%;
+
+}
+.headercontainer{
+    width: 100%;
+    background-image: url(/images/Rectangle\ 1.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    object-fit: cover;
+}
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}/*
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+} */
+ul{
+    display: flex;
+    gap: 2rem;
+}
+li{
+    color: white;
+    font-family: montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+header button{
+    border-radius: 50px;
+    background: #1bc768;
+    color: #FFF;
+    font-family:  montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: .5rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+.headerlogo img{
+    cursor: pointer;
+}
+
+.hero{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem
+}
+.herotext{
+    width: 45%;
+}
+.herotext h2{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.herotext p{
+    color: #FFF;
+    font-family: montserrat ;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem 0;
+}
+.herobtn button{
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family:  montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    padding: .5rem 2rem;
+    margin-right: 1rem;
+}
+
+.herobtn button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.heroimage img{
+    width: 100%;
+    margin-top: 3rem;
+}
+.heroinput{
+    margin-top: 2rem;
+}
+.heroinput input{
+    border-radius: 50px 0 0 50px;
+    background: #DEE9FF;
+    padding: .5rem 3rem ;
+    width: 330px;
+    border: none;
+    background-image: url(/images/mdi_search.png);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    
+}
+::placeholder{
+    color: #7A7A7A;
+    font-family: montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.heroinput button{
+    width: 110px;
+    border-radius: 0 50px 50px 0;
+    padding: .5rem;
+    border: none;
+    background: #1bc768;
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-left: -4px;
+
+}
+.innercontainer{
+    width: 90%;
+    margin: auto;
+}
+.affiliations{
+    text-align: center;
+    margin: 4rem 0;
+}
+.affiliations h2{
+    color: #043CAA;
+    font-family: montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.lines{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+.line1 hr{
+    background: rgb(5, 5, 83);
+    width: 45px;
+    height: 5px;
+    /* border: 1px solid rgb(1, 1, 75); */
+}
+.line2 hr{
+    background: #148547;
+    width: 45px;
+    height: 5px;
+    /* border: 1px solid rgb(0, 128, 75); */
+}
+.sponsors {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 5rem;
+}
+/*|.benefits{
+    text-align: center;
+} */
+.benefits h2{
+    color: #043CAA;
+    font-family: montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+ }
+.benefittext h5{
+    color: #043caa;
+    font-family: montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.benefitflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listflex{
+    display: flex;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+.listflex p{
+    color: #333;
+    font-family: montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.benefitbtn button{
+    color: #1BC768;
+    font-family: montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 50px;
+    background: none;
+    border: 1px solid #1BC768;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+ }
+.benefitflex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.benefitflex2 img{
+    width: 80%;
+}
+.benefitflex3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;    
+} 
+.benefitflex3 img{
+    width: 90%;
+}
+.client{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    align-items: center;
+
+}
+.clientimage {
+    width: 50%;
+}
+.clientimage img{
+    width: 100%;
+}
+.clienttext{
+    width: 40%;
+}
+.clienttext h2{
+    color: #000;
+    font-family: montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.clienttext p{
+    color: #7A7A7A;
+    font-family: montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 32.4px */
+    width: 85%;
+}
+.clienttext h6{
+    color: #043CAA;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 32.4px */
+    padding: 1.5rem 0;
+}
+.liness{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    margin-left: -6rem;
+}
+
+footer{
+    width: 100%;
+    background: #043CAA;
+    
+}
+.innerfooter{
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+
+}
+.textinput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputside input{
+    border-radius: 50px 0 0 50px;
+    background: #DEE9FF;
+    padding: .5rem 3rem ;
+    width: 300px;
+    border: none;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+.inputside label{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputside button{
+    width: 110px;
+    border-radius: 0 50px 50px 0;
+    padding: .5rem;
+    border: none;
+    background: #1bc768;
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-left: -4px;
+}
+.textside{
+    width: 50%;
+}
+.textside h3{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+.textside p{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:90% ;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.logoside{
+    width: 30%;
+}
+.logoside p{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1rem;
+    width: 70%;
+}
+.footerside{
+    display: flex;
+    gap: 6rem;
+}
+
+.foot h5{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    /* width: 50%; */
+
+}
+.foot p{
+    color: #FFF;
+    font-family: montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+.copyright p{
+    text-align: center;
+    color: #fff;
+    font-family: montserrat;
+    margin-top: 1rem;
+
+}
+@media screen and (max-width:1024px){
+    .herotext{
+        width: 65%;
+    }
+    .herotext h2{
+        font-size: 40px;
+
+    }
+    
+    .herotext p{
+        color: #FFF;
+        font-family: montserrat ;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 2rem 0;
+    }
+    .inputside input{
+        border-radius: 50px 0 0 50px;
+        background: #DEE9FF;
+        padding: .5rem 3rem ;
+        width: 250px;
+        border: none;
+        margin-top: 1rem;
+        padding-right: 1rem;
+    }
+    .inputside button{
+        width: 100px;
+        border-radius: 0 50px 50px 0;
+        padding: .5rem;
+        border: none;
+        background: #1bc768;
+        color: #FFF;
+        font-family: montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        margin-left: -4px;
+    }
+    .footerside{
+        display: flex;
+        gap: 6rem;
+    }
+
+}
+@media screen and (max-width:768px){
+    ul{
+        display: none;
+    }
+    header button{
+        display: none;
+    }
+    .herotext h2{
+        font-size: 30px;
+    }
+    .herotext p{
+        font-size: 14px;
+ 
+    }
+    .herotext{
+        width: 85%;
+    }
+    .herobtn button{
+        
+        font-size: 14px;
+        padding: .5rem 1.5rem;
+        margin-right: .7rem;
+    }
+    .heroinput input{
+        width: 275px;
+    
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+    
+.heroinput button{
+    width: 80px;
+    padding: .5rem;
+    font-size: 14px;
+
+  }
+
+  
+.affiliations h2{
+    font-size: 30px;
+
+}
+
+.sponsors {
+    width: 80%;
+ }
+ .benefits h2{
+    
+    font-size: 30px;
+ }
+ .benefittext h5{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    
+}
+.listflex p{
+    font-size: 14px;
+}
+.benefitbtn button{
+    font-size: 18px;
+
+ }
+ .benefitimage img{
+     width: 100%;
+ }
+ 
+.clienttext h2{
+    font-size: 25px;
+
+}
+.clienttext p{
+    width: 75%;
+    font-size: 14px;
+}
+.textside h3{
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+}
+
+.textside p{
+    font-size: 14px;
+    width:85% ;
+}
+.inputside input{
+    width: 60%;
+    font-size: 14px;
+}
+.inputside button{
+    font-size: 14px;
+    width: 90px;
+}
+.inputside label{
+    font-size: 14px;
+}
+.inputside button{
+    width:80px ;
+}
+.footercontent p{
+    font-size: 14px;
+}
+.logoside{
+    width: 35%;
+}
+.logoside p{
+    width: 100%;
+}
+.footerside{
+    width: 90%;
+    gap: 3rem;
+}
+}
+@media screen and (max-width:425px){
+.hero{
+    width: 90%;
+    display: block;
+    margin-top: 3rem;
+    }
+    .herotext{
+        margin-top: 2rem;
+        width: 90%;
+    }
+    .herotext h2{
+        font-size: 35px;
+    
+    }
+    
+    .herotext p{
+        font-size: 18px;
+        padding: 2rem 0;
+    }
+    .herobtn button{
+
+        font-size: 14px;
+        padding: .5rem 1.3rem;
+
+    }
+    .heroinput input{
+        width: 240px;
+        
+    }
+    ::placeholder{
+        color: #7A7A7A;
+        font-family: montserrat;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+    .heroinput button{
+        width: 90px;
+        padding: .5rem;
+        font-size: 14px;
+        margin-left: -4px;
+    
+    }
+    .affiliations h2{
+        font-size: 30px;
+    }
+    .sponsors{
+        gap: 1rem;
+        width: 100%;
+    }
+    .benefitflex{
+        display: block;
+        
+    }
+    .benefitflex2{
+        flex-direction: column-reverse;
+        
+    }
+    .benefitflex3{
+        display: block;
+        
+    }
+    .client{
+        flex-direction: column-reverse;
+    }
+    .clientimage {
+        width: 90%;
+    }
+    .clientimage img{
+        width: 100%;
+    }
+    .clienttext{
+        width: 80%;
+    }
+    .footercontent{
+        display: block;
+        
+    }
+    .textinput{
+        display: block;
+    }
+    .textside{
+        width: 70%;
+    }
+    .textside p{
+        margin-bottom: 1rem;
+    }
+    .logoside{
+        width: 70%;
+    }
+
+    
+}
+
+    
+    
+
+    
+
+
